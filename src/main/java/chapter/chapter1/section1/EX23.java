@@ -3,7 +3,7 @@ package chapter.chapter1.section1;
 import java.util.Arrays;
 import edu.princeton.cs.algs4.*;
 
-public class BinarySearch {
+public class EX23 {
 
     public static int rank(int key, int[] a) {
         int lo = 0;
@@ -23,10 +23,23 @@ public class BinarySearch {
     public static void main(String[] args) {
         int[] whitelist = new In(args[0]).readAllInts();
         Arrays.sort(whitelist);
-        while (!StdIn.isEmpty()) {
-            int key = StdIn.readInt();
-            if (rank(key, whitelist) < 0)
-                StdOut.println(key);
+
+        if (args[1].equals("+")) {
+            while (!StdIn.isEmpty()) {
+                int key = StdIn.readInt();
+                if (rank(key, whitelist) < 0)
+                    StdOut.println(key);
+            }
+
+        }
+
+        if (args[1].equals("-")) {
+            while (!StdIn.isEmpty()) {
+                int key = StdIn.readInt();
+                if (rank(key, whitelist) > 0)
+                    StdOut.println(key);
+            }
+
         }
     }
 }

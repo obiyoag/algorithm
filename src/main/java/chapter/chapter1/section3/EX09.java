@@ -2,7 +2,7 @@ package chapter.chapter1.section3;
 
 import java.util.Scanner;
 
-public class EX09 {
+public class EX09 {  //为表达式添加左括号
     public static void main(String[] args) {
         Queue<String> q0 = new Queue<String>();
         Queue<String> q1 = new Queue<String>();

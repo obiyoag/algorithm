@@ -2,7 +2,7 @@ package chapter.chapter1.section3;
 
 import java.util.Scanner;
 
-public class EX04 {
+public class EX04 {  //判断括号是否合法
     public static void main(String[] args) {
         Stack<String> stack = new Stack<String>();
         stack.push("0");

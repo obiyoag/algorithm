@@ -45,6 +45,14 @@ public class Stack<Item> implements Iterable<Item> {
         }
     }
 
+    public static Stack<String> copy(Stack<String> s){
+        Stack<String> s_temp = new Stack<String>();
+        Stack<String> s_copy = new Stack<String>();
+        for(String str:s) s_temp.push(str);
+        for(String str:s_temp) s_copy.push(str);
+        return s_copy;
+    }
+
     public Iterator<Item> iterator(){
         return new ListIterator();
     }
@@ -69,7 +77,11 @@ public class Stack<Item> implements Iterable<Item> {
         Stack<String> stack = new Stack<String>();
         stack.push("(");
         stack.push(")");
-        System.out.println(stack.pop());
+        Stack<String> fake_copy = stack;
+        Stack<String> stack_copy = copy(stack);
+        System.out.println(stack.toString());
+        System.out.println(fake_copy.toString());
+        System.out.println(stack_copy.toString());
     }
 
 }

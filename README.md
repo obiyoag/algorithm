@@ -1,9 +1,10 @@
 # Algorithm(《算法》第四版)
-这个项目保存我在学习《算法》的练习代码和笔记。关于本书的更多资源可见[本书网站](https://algs4.cs.princeton.edu/home/)。
+这个项目保存我学习《算法》的练习代码和笔记。关于本书的更多资源可见[本书网站](https://algs4.cs.princeton.edu/home/)。
 
 ## 环境配置
 《算法》提供了一个包含许多输入输出方法的[工具库](https://introcs.cs.princeton.edu/java/stdlib/)，可以减轻读者实现算法的负担，将精力放在算法的理解上。  
-配置步骤：
+
+**配置步骤**：
 1. 下载本书提供的工具库[algs4.jar](https://algs4.cs.princeton.edu/code/algs4.jar)
 2. 安装[maven](https://maven.apache.org/)并配置环境变量。
 3. 将工具库导入本地maven仓库:  
